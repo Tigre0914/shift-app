@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/shift-app/static/css/main.c7e3aebf.css",
+    "main.js": "/shift-app/static/js/main.b6e9a1b1.js",
+    "index.html": "/shift-app/index.html",
+    "main.c7e3aebf.css.map": "/shift-app/static/css/main.c7e3aebf.css.map",
+    "main.b6e9a1b1.js.map": "/shift-app/static/js/main.b6e9a1b1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c7e3aebf.css",
+    "static/js/main.b6e9a1b1.js"
+  ]
+}
