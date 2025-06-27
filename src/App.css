@@ -1,38 +1,57 @@
-.App {
+.shift-table th, .shift-table td {
+  min-width: 50px; /* セルの最小幅をさらに縮小 */
   text-align: center;
+  vertical-align: middle;
+  font-size: 0.75rem; /* フォントサイズを小さく */
+  padding: 0.25rem; /* パディングを減らす */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.shift-table th {
+  background-color: #f8f9fa;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.shift-table td select {
+  width: 100%;
+  font-size: 0.7rem; /* ドロップダウンのフォントサイズを小さく */
+  padding: 0.1rem; /* ドロップダウンのパディングを減らす */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.shift-table td:first-child {
+  min-width: 80px; /* 従業員名の列の最小幅を調整 */
+  text-align: center; /* 従業員名を中央揃え */
 }
 
-.App-link {
-  color: #61dafb;
+.sunday {
+  color: red !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.saturday {
+  color: blue !important;
+}
+
+.shift-table tbody tr.row-even td {
+  background-color: #ffffff !important; /* 白 */
+  background-image: none !important;
+}
+
+.shift-table tbody tr.row-odd td {
+  background-color: #e0f7fa !important; /* 水色 */
+  background-image: none !important;
+}
+
+/* ヘッダーの年/月選択と休日入力の調整 */
+.d-flex.justify-content-center.align-items-center.mb-3 .form-select,
+.d-flex.justify-content.center.align-items-center.mb-3 .form-control {
+  font-size: 0.8rem; /* 上部の選択肢のフォントサイズを小さく */
+  padding: 0.25rem 0.5rem; /* 上部の選択肢のパディングを調整 */
+}
+
+.d-flex.justify-content-center.align-items-center.mb-3 .form-label {
+  font-size: 0.8rem; /* ラベルのフォントサイズを小さく */
+  margin-bottom: 0;
+}
+
+/* カードのパディングを調整 */
+.card-body {
+  padding: 1rem; /* カードボディのパディングを減らす */
 }
